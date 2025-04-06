@@ -6,7 +6,7 @@ import { useRouter, useLocalSearchParams } from 'expo-router';
 import { textToSpeech } from '../utils/tts';
 
 const SARVAM_API_KEY = '9ede12ba-df25-4f8c-8429-eac58a72fc8f'; // Replace with your actual API key
-const BACKEND_URL = 'http://172.21.3.222:5000';  // Update with your local IP
+const BACKEND_URL = 'http://192.168.62.61:5000';  // Update with your local IP
 
 export default function AssistanceScreen() {
   const router = useRouter();
@@ -99,7 +99,7 @@ export default function AssistanceScreen() {
       });
       
       form.append("model", "saarika:v2");
-      form.append("language_code", "hi-IN");
+      form.append("language_code", "en-IN");
       form.append("with_timestamps", "false");
       form.append("with_diarization", "false");
       form.append("num_speakers", "1");
